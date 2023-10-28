@@ -4,7 +4,7 @@ const CHANNEL = "free-space";
 const web = new WebClient(token);
 
 // slackにメッセージを投稿
-exports.postMessage = async () => {
+exports.handler = async () => {
   const result = await web.chat.postMessage({
     text: "slack post message test",
     channel: CHANNEL,
